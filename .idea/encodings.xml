@@ -6,10 +6,10 @@
     <file url="file://$PROJECT_DIR$/nm-framework-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nm-framework-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nm-service-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nm-service-manage-cms-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nm‐service‐manage‐cms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nm‐service‐manage‐cms‐client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-rabbitmq-consumer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test-rabbitmq-consumer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test-rabbitmq-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-rabbitmq-producer" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

@@ -20,7 +20,7 @@ public class rabbitmq {
         for(int i=0;i<5;i++){
             String message="sms email inform to user"+i;
             /**
-             * 第一个参数：交换器名字
+             * 第一个参数：交换机名字
              * 第二个参数：路由Key
              * 第三个参数：发送的信息
              */

@@ -10,7 +10,7 @@ public class Consumer05_header_email {
     //发送邮件
     private static final String QUEUE_INFORM_EMAIL="queue_inform_email";
     //topics类型的交换器
-    private static final String EXCHANGE_HEADRS_INFORM="exchange_heards_inform";
+    private static final String EXCHANGE_HEADERS_INFORM="exchange_headers_inform";
 
     public static void main(String[] args) {
         Map<String,Object> headers_email=new Hashtable<String,Object>();
@@ -49,15 +49,15 @@ public class Consumer05_header_email {
              TOPIC("topic"),
              HEADERS("headers")
              */
-            channel.exchangeDeclare(EXCHANGE_HEADRS_INFORM, BuiltinExchangeType.HEADERS);
+            channel.exchangeDeclare(EXCHANGE_HEADERS_INFORM, BuiltinExchangeType.HEADERS);
 
             //交换机和队列绑定String queue,String exchange,String routingKey
             //参数明细
             //队列名称
             //2、交换机名称
             //3、路由key 发布订阅不用设置路由
-            //headr Map 集合
-            channel.queueBind(QUEUE_INFORM_EMAIL,EXCHANGE_HEADRS_INFORM,"",headers_email);
+            //headers Map 集合
+            channel.queueBind(QUEUE_INFORM_EMAIL,EXCHANGE_HEADERS_INFORM,"",headers_email);
 
             //消费消息方法
             Consumer consumer = new DefaultConsumer(channel){

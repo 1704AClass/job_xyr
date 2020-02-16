@@ -14,7 +14,7 @@ public class Producer05_header {
     //发送短信
     private static final String QUEUE_INFORM_SMS="queue_inform_sms";
     //heards类型的交换器
-    private static final String EXCHANGE_HEARDS_INFORM="exchange_heards_inform";
+    private static final String EXCHANGE_HEADERS_INFORM="exchange_headers_inform";
 
     public static void main(String[] args) {
 
@@ -59,15 +59,15 @@ public class Producer05_header {
              TOPIC("topic"),
              HEADERS("headers")
              */
-            channel.exchangeDeclare(EXCHANGE_HEARDS_INFORM, BuiltinExchangeType.HEADERS);
+            channel.exchangeDeclare(EXCHANGE_HEADERS_INFORM, BuiltinExchangeType.HEADERS);
 
             //和队列绑交换机定String queue,String exchange,String routingKey
             //参数明细
             //队列名称
             //2、交换机名称
             //3、路由key 发布订阅不用设置路由
-           channel.queueBind(QUEUE_INFORM_EMAIL,EXCHANGE_HEARDS_INFORM,"",headers_email);
-            channel.queueBind(QUEUE_INFORM_SMS,EXCHANGE_HEARDS_INFORM,"",headers_sms);
+           channel.queueBind(QUEUE_INFORM_EMAIL,EXCHANGE_HEADERS_INFORM,"",headers_email);
+            channel.queueBind(QUEUE_INFORM_SMS,EXCHANGE_HEADERS_INFORM,"",headers_sms);
 
 
 
@@ -84,15 +84,15 @@ public class Producer05_header {
                 AMQP.BasicProperties.Builder properties=new AMQP.BasicProperties.Builder();
                 headers.put("inform_type","email");//匹配email通知消费者绑定的header
                 properties.headers(headers);
-                String manage = "小明你好 你的邮件";
+                String manage = "小明你好 你的邮件"+(i+1);
                 System.out.println("send :"+manage+"，时间："+new Date());
-                channel.basicPublish(EXCHANGE_HEARDS_INFORM,"",properties.build(),manage.getBytes());
+                channel.basicPublish(EXCHANGE_HEADERS_INFORM,"",properties.build(),manage.getBytes());
 
 
             }
 
             //短信
-            for (int i = 0;i<10;i++){
+            for (int i = 0;i<6;i++){
                 /**
                  * 消息发布方法
                  * String exchange, 交换机 如果用的是普通队列 交换机名称可以为""
@@ -104,9 +104,9 @@ public class Producer05_header {
                 AMQP.BasicProperties.Builder properties=new AMQP.BasicProperties.Builder();
                 headers.put("inform_type","sms");//匹配email通知消费者绑定的header
                 properties.headers(headers);
-                String manage = "小明你好 你的短信";
+                String manage = "小明你好 你的短信"+(i+1);
                 System.out.println("send :"+manage+"，时间："+new Date());
-                channel.basicPublish(EXCHANGE_HEARDS_INFORM,"",properties.build(),manage.getBytes());
+                channel.basicPublish(EXCHANGE_HEADERS_INFORM,"",properties.build(),manage.getBytes());
 
 
             }
