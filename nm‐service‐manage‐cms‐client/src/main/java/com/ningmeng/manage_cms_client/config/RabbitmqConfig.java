@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 /**
- * 这个类在启动的时候自动运行
+ * 这个类在启动的时候会自动运行
  */
 
 @Configuration
