@@ -59,9 +59,7 @@ public class CourseService {
     //添加课程计划
     public ResponseResult addTeachplan(Teachplan teachplan){
         //校验课程id和课程计划名称
-        if(teachplan == null ||
-                StringUtils.isEmpty(teachplan.getCourseid()) ||
-                    StringUtils.isEmpty(teachplan.getPname())){
+        if(teachplan == null || StringUtils.isEmpty(teachplan.getCourseid()) || StringUtils.isEmpty(teachplan.getPname())){
             CustomExceptionCast.cast(CommonCode.INCALID_PARAM);
         }
         //取出课程id
