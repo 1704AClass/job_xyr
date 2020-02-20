@@ -1,16 +1,21 @@
 package com.ningmeng.manage_course.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.ningmeng.framework.domain.course.CourseBase;
+import com.ningmeng.framework.domain.course.CourseMarket;
 import com.ningmeng.framework.domain.course.Teachplan;
+import com.ningmeng.framework.domain.course.ext.CourseInfo;
+import com.ningmeng.framework.domain.course.ext.TeachplanNode;
 import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
+import com.ningmeng.framework.model.response.QueryResponseResult;
+import com.ningmeng.framework.model.response.QueryResult;
 import com.ningmeng.framework.model.response.ResponseResult;
-import com.ningmeng.manage_course.dao.CourseBaseRepository;
-import com.ningmeng.manage_course.dao.TeachplanMapper;
-import com.ningmeng.framework.domain.course.ext.TeachplanNode;
-import com.ningmeng.manage_course.dao.TeachplanRepository;
+import com.ningmeng.manage_course.dao.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
@@ -25,11 +30,40 @@ public class CourseService {
     private CourseBaseRepository courseBaseRepository;
     @Autowired
     private TeachplanRepository teachplanRepository;
+    @Autowired
+    private CourseMapper courseMapper;
+    @Autowired
+    private CourseMarketRepository courseMarketRepository;
 
     //查询课程计划
     public TeachplanNode findTeachplanList(String id){
         return teachplanMapper.findTeachplanList(id);
     }
+
+    /**
+     * 根据公司Id查询课程列表
+     * 想使用spring事务怎么办？springBoot自动加入spring事务管理
+     */
+    @Transactional
+    public QueryResponseResult findCourseList(int page,int pagesize,String companyId){
+
+        //做异常处理
+        if(companyId == null || "".equals(companyId)){
+            //通用的异常处理 都是父子级关系
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+
+        PageHelper.startPage(page,pagesize);
+        //这中间不能有sql语句
+        Page<CourseInfo> pageAll = courseMapper.findCourseListPage(companyId);
+
+        QueryResult queryResult = new QueryResult();
+        queryResult.setList(pageAll.getResult());
+        queryResult.setTotal(pageAll.getTotal());
+
+        return new QueryResponseResult(CommonCode.SUCCESS,queryResult);
+    }
+
 
     //获取课程根结点，如果没有则添加根结点
     public String getTeachplanRoot(String courseId){
@@ -91,6 +125,48 @@ public class CourseService {
         //设置课程id
         teachplan.setCourseid(teachplanParent.getCourseid());
         teachplanRepository.save(teachplan);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+    //新增课程
+    public ResponseResult addCourseBase(CourseBase courseBase){
+        if(courseBase == null){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        courseBaseRepository.save(courseBase);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+    //获取课程基础信息
+    public CourseBase getCourseBaseById(String courseId) {
+        if(courseId == null || "".equals(courseId)){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        return courseBaseRepository.findById(courseId).get();
+    }
+    //更新课程基础信息
+    public ResponseResult updateCourseBase(CourseBase courseBase) {
+        if(courseBase == null){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        courseBaseRepository.save(courseBase);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+    //获取课程营销信息
+    public CourseMarket getCourseMarketById(String courseId) {
+        if(courseId == null || "".equals(courseId)){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        return courseMarketRepository.findById(courseId).get();
+    }
+
+    //更新课程营销信息
+    public ResponseResult updateCourseMarket(CourseMarket courseMarket) {
+        if(courseMarket == null){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        courseMarketRepository.save(courseMarket);
         return new ResponseResult(CommonCode.SUCCESS);
     }
 }

@@ -22,6 +22,7 @@ public class TestDao {
     @Autowired
     CourseMapper courseMapper;
 
+
     @Test
     public void testCourseBaseRepository(){
         Optional<CourseBase> optional = courseBaseRepository.findById("402885816240d276016240f7e5000002");
@@ -38,4 +39,6 @@ public class TestDao {
         System.out.println(courseBase);
 
     }
+
+
 }
