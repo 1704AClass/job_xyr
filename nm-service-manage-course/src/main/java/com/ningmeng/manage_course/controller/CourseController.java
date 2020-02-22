@@ -3,6 +3,7 @@ package com.ningmeng.manage_course.controller;
 import com.ningmeng.api.courseapi.CourseControllerApi;
 import com.ningmeng.framework.domain.course.CourseBase;
 import com.ningmeng.framework.domain.course.CourseMarket;
+import com.ningmeng.framework.domain.course.CoursePic;
 import com.ningmeng.framework.domain.course.Teachplan;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
@@ -92,4 +93,25 @@ public class CourseController implements CourseControllerApi {
     public ResponseResult updateCourseMarket(@RequestBody CourseMarket courseMarket) {
         return courseService.updateCourseMarket(courseMarket);
     }
+
+    @Override
+    @PostMapping("/coursepic/addCoursePic")
+    public ResponseResult addCoursePic(@RequestParam(value = "courseId",required = true) String courseId, @RequestParam(value = "pic",required = true) String pic) {
+        //保存课程图片
+        return courseService.saveCoursePic(courseId,pic);
+    }
+
+    @Override
+    @GetMapping("/coursepic/list/{courseId}")
+    public CoursePic findCoursePic(@PathVariable("courseId") String courseId) {
+
+        return courseService.findCoursepic(courseId);
+    }
+
+    @Override
+    @DeleteMapping("/coursepic/delete")
+    public ResponseResult deleteCoursePic(@RequestParam("courseId") String courseId) {
+        return courseService.deleteCoursePic(courseId);
+    }
+
 }

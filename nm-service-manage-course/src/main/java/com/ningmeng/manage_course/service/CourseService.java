@@ -4,9 +4,11 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.ningmeng.framework.domain.course.CourseBase;
 import com.ningmeng.framework.domain.course.CourseMarket;
+import com.ningmeng.framework.domain.course.CoursePic;
 import com.ningmeng.framework.domain.course.Teachplan;
 import com.ningmeng.framework.domain.course.ext.CourseInfo;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
+import com.ningmeng.framework.domain.course.response.CourseCode;
 import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
 import com.ningmeng.framework.model.response.QueryResponseResult;
@@ -22,6 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class CourseService {
 
     @Autowired
@@ -34,6 +37,8 @@ public class CourseService {
     private CourseMapper courseMapper;
     @Autowired
     private CourseMarketRepository courseMarketRepository;
+    @Autowired
+    private CoursePicRepository coursePicRepository;
 
     //查询课程计划
     public TeachplanNode findTeachplanList(String id){
@@ -167,6 +172,49 @@ public class CourseService {
             CustomExceptionCast.cast(CommonCode.FAIL);
         }
         courseMarketRepository.save(courseMarket);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+    //添加课程图片
+    @Transactional
+    public ResponseResult saveCoursePic(String courseId,String pic){
+        //自己抛出异常
+        if(pic == null || "".equals(pic)){
+            //pic图片路径有问题
+            CustomExceptionCast.cast(CourseCode.COURSE_PUBLISH_VIEWERROR);
+        }
+        CoursePic coursePic = new CoursePic();
+        //先查询课程Id有没有对应的图片
+        Optional<CoursePic> picOptional = coursePicRepository.findById(courseId);
+        if(picOptional.isPresent()){
+            coursePic = picOptional.get();
+        }
+
+        //没有课程图片就新增
+        coursePic.setPic(pic);
+        coursePic.setCourseid(courseId);
+
+        coursePicRepository.save(coursePic);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
+
+    public CoursePic findCoursepic(String courseId) {
+
+        //先判断 是否为空 然后再.get
+        return coursePicRepository.findById(courseId).get();
+    }
+
+    //删除课程图片
+    @Transactional
+    public ResponseResult deleteCoursePic(String courseId) {
+
+        //执行删除，返回1表示删除成功，返回0表示删除失败
+        long result = coursePicRepository.deleteByCourseid(courseId);
+        if(result==0){
+            //失败
+            return new ResponseResult(CommonCode.FAIL);
+        }
+        //成功
         return new ResponseResult(CommonCode.SUCCESS);
     }
 }
