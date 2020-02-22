@@ -13,7 +13,7 @@
     <artifactId>nm-govern-center</artifactId>
 
     <dependencies>
-        <!--导入Eureka服务的依赖-->
+        <!--导入Eureka服务依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
