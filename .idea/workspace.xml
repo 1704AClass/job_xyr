@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5025eb6-ae5d-4954-a030-0d87da6416d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_feign_feign_core_8_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_feign_feign_okhttp_8_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_animal_sniffer_annotation_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_0_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/filesystemapi/FileSystemControllerApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/client/CmsPageClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/FeignTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/Tests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/client/CmsPageClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/dao/CoursePicRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/target/test-classes/com/ningmeng/manage_course/test/FeignTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/target/test-classes/com/ningmeng/manage_course/test/Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/client/NmServiceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/client/NmServiceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-framework-common/target/classes/com/ningmeng/framework/client/NmServiceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-common/target/classes/com/ningmeng/framework/client/NmServiceList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-govern-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-govern-center/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-govern-center/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-govern-center/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/courseapi/CourseControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/courseapi/CourseControllerApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/nm-service-manage-course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/nm-service-manage-course.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/ManageCourseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/ManageCourseApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/controller/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/target/classes/com/ningmeng/manage_course/service/CourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/nm‐service‐manage‐cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/nm‐service‐manage‐cms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/ManageCmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/ManageCmsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/target/classes/com/ningmeng/manage_cms/ManageCmsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/target/classes/com/ningmeng/manage_cms/ManageCmsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/target/classes/com/ningmeng/manage_cms/controller/CmsPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/target/classes/com/ningmeng/manage_cms/controller/CmsPageController.class" afterDir="false" />
-    </list>
+    <list default="true" id="f5025eb6-ae5d-4954-a030-0d87da6416d9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/nm-service-api/target/" />
     <ignored path="$PROJECT_DIR$/nm-framework-model/target/" />
     <ignored path="$PROJECT_DIR$/nm-framework-parent/target/" />
@@ -64,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="91">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="e#942#943#0" expanded="true" />
                 <element signature="e#1020#1021#0" expanded="true" />
@@ -80,17 +46,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/FeignTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="279">
               <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/client/CmsPageClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="279">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="265">
               <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
             </state>
           </provider>
@@ -182,11 +148,11 @@
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/Tests.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/pom.xml" />
         <option value="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/client/NmServiceList.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/TestFeign.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/FeignTest.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/client/CmsPageClient.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" />
       </list>
     </option>
   </component>
@@ -224,10 +190,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="657" />
-    <option name="y" value="178" />
-    <option name="width" value="1238" />
-    <option name="height" value="1004" />
+    <option name="x" value="656" />
+    <option name="y" value="177" />
+    <option name="width" value="1239" />
+    <option name="height" value="1005" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -424,14 +390,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.Govern01" />
-      <item itemvalue="Spring Boot.GovernCenterApplication" />
-      <item itemvalue="Spring Boot.Govern02" />
-      <item itemvalue="Spring Boot.ManageCms31002" />
-      <item itemvalue="Spring Boot.ManageCmsApplication" />
-      <item itemvalue="Spring Boot.ManageCourseApplication" />
       <item itemvalue="JUnit.Tests.testRibbon" />
       <item itemvalue="JUnit.FeignTest.testFeign" />
+      <item itemvalue="Spring Boot.Govern01" />
+      <item itemvalue="Spring Boot.Govern02" />
+      <item itemvalue="Spring Boot.ManageCms31002" />
+      <item itemvalue="Spring Boot.GovernCenterApplication" />
+      <item itemvalue="Spring Boot.ManageCmsApplication" />
+      <item itemvalue="Spring Boot.ManageCourseApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -467,7 +433,7 @@
       <workItem from="1581729661673" duration="1000" />
       <workItem from="1581732784437" duration="23247000" />
       <workItem from="1582082594888" duration="26386000" />
-      <workItem from="1582442238333" duration="13144000" />
+      <workItem from="1582442238333" duration="13473000" />
     </task>
     <task id="LOCAL-00001" summary="2.14">
       <created>1581727688460</created>
@@ -567,7 +533,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582338484292</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2.22">
+      <created>1582464599742</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1582464599743</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2.22提交">
+      <created>1582464716916</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582464716916</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -603,7 +583,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129160000" />
+    <option name="totallyTimeSpent" value="129489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,7 +597,7 @@
   <component name="ToolWindowManager">
     <frame x="526" y="143" width="990" height="803" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.333691" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.333691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -633,10 +613,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298969" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49881235" weight="0.21752578" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4967811" visible="true" weight="0.21638331" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5011876" side_tool="true" weight="0.4113402" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.5032189" side_tool="true" visible="true" weight="0.21638331" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32612056" />
@@ -752,7 +732,9 @@
     <MESSAGE value="2.20" />
     <MESSAGE value="2.21" />
     <MESSAGE value="2.21提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.21提交" />
+    <MESSAGE value="2.22" />
+    <MESSAGE value="2.22提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.22提交" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1123,17 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1144,26 +1115,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/FeignTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="279">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/FeignTest.java">
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="265">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/client/CmsPageClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="279">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
           </folding>
         </state>
       </provider>
