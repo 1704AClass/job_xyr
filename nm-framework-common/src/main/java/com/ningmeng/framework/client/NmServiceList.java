@@ -2,19 +2,19 @@ package com.ningmeng.framework.client;
 
 
 public class NmServiceList {
-    public static final String XC_GOVERN_CENTER = "xc-govern-center";
-    public static final String XC_SERVICE_PORTALVIEW = "xc-service-portalview";
-    public static final String XC_SERVICE_SEARCH = "xc-service-search";
-    public static final String XC_SERVICE_MANAGE_COURSE = "xc-service-manage-course";
-    public static final String XC_SERVICE_MANAGE_MEDIA = "xc-service-manage-media";
-    public static final String XC_SERVICE_MANAGE_CMS = "xc-service-manage-cms";
-    public static final String XC_SERVICE_UCENTER = "xc-service-ucenter";
-    public static final String XC_SERVICE_UCENTER_AUTH = "xc-service-ucenter-auth";
-    public static final String XC_SERVICE_UCENTER_JWT = "xc-service-ucenter-jwt";
-    public static final String XC_SERVICE_BASE_FILESYSTEM = "xc-service-base-filesystem";
-    public static final String XC_GOVERN_GATEWAY = "xc-govern-gateway";
-    public static final String XC_SERVICE_BASE_ID = "xc-service-base-id";
-    public static final String XC_SERVICE_MANAGE_ORDER = "xc-service-manage-order";
-    public static final String XC_SERVICE_LEARNING = "xc-service-learning";
+    public static final String NM_GOVERN_CENTER = "nm-govern-center";
+    public static final String NM_SERVICE_PORTALVIEW = "nm-service-portalview";
+    public static final String NM_SERVICE_SEARCH = "nm-service-search";
+    public static final String NM_SERVICE_MANAGE_COURSE = "nm-service-manage-course";
+    public static final String NM_SERVICE_MANAGE_MEDIA = "nm-service-manage-media";
+    public static final String NM_SERVICE_MANAGE_CMS = "nm-service-manage-cms";
+    public static final String NM_SERVICE_UCENTER = "nm-service-ucenter";
+    public static final String NM_SERVICE_UCENTER_AUTH = "nm-service-ucenter-auth";
+    public static final String NM_SERVICE_UCENTER_JWT = "nm-service-ucenter-jwt";
+    public static final String NM_SERVICE_BASE_FILESYSTEM = "nm-service-base-filesystem";
+    public static final String NM_GOVERN_GATEWAY = "nm-govern-gateway";
+    public static final String NM_SERVICE_BASE_ID = "nm-service-base-id";
+    public static final String NM_SERVICE_MANAGE_ORDER = "nm-service-manage-order";
+    public static final String NM_SERVICE_LEARNING = "nm-service-learning";
 
 }
