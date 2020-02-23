@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
  **/
 @SpringBootApplication
 @EnableDiscoveryClient  //启动eureka客户端
-@EnableFeignClients     //启动feign
+@EnableFeignClients     //启动feign客户端
 @EntityScan("com.ningmeng.framework.domain.course")//扫描实体类
 @ComponentScan(basePackages={"com.ningmeng.api"})//扫描接口
 @ComponentScan(basePackages={"com.ningmeng.manage_course"})
