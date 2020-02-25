@@ -5,7 +5,9 @@ import com.ningmeng.framework.domain.course.CourseMarket;
 import com.ningmeng.framework.domain.course.CoursePic;
 import com.ningmeng.framework.domain.course.Teachplan;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
+import com.ningmeng.framework.domain.course.ext.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
+import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.domain.system.SysDictionary;
 import com.ningmeng.framework.model.response.QueryResponseResult;
 import com.ningmeng.framework.model.response.ResponseResult;
@@ -14,6 +16,12 @@ import io.swagger.annotations.ApiOperation;
 
 @Api(value = "课程管理API",description = "课程管理API，提供课程管理的增、删、改、查")
 public interface CourseControllerApi {
+
+    @ApiOperation("预览课程")
+    public CoursePublishResult preview(String id);
+
+    @ApiOperation("课程视图查询")
+    public CourseView courseview(String id);
 
     /**
      * 根据课程Id查询Three树 数据

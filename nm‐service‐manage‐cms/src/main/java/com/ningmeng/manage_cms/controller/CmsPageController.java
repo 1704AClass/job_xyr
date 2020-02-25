@@ -68,4 +68,15 @@ public class CmsPageController implements CmsPageControllerApi {
     public ResponseResult post(@PathVariable("pageId") String pageId) {
         return pageService.postPage(pageId);
     }
+
+
+    /**
+     * String  = 页面物理路径=站点物理路径+页面物理路径+页面名称
+     * @param cmsPageId
+     * @return
+     */
+    @GetMapping("/preview/{id}")
+    public String preview(@PathVariable("id") String cmsPageId){
+        return pageService.preview(cmsPageId);
+    }
 }

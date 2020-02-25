@@ -40,3 +40,10 @@ ribbon:
   ReadTimeout: 6000 #请求处理的超时时间
   eureka:
     enabled: true
+course-publish:
+  siteId: 5b30cba5f58b4411fc6cb1e5
+  templateId: 5b345a6b94db44269cb2bfec
+  previewUrl: http://www.ningmeng.com/cms/preview/
+  pageWebPath: /course/detail/
+  pagePhysicalPath: /course/detail/
+  dataUrlPre: http://localhost:31200/course/courseview/

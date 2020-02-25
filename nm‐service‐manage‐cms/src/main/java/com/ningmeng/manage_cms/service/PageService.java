@@ -33,6 +33,16 @@ public class PageService {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    public String preview(String cmsPageId){
+        //模板Id
+        CmsPage cmsPage = cmsPageRepository.findById(cmsPageId).get();
+        //根据cmsPage.getTemplateId();获得GridFS中保存模板文件
+        //获得静态化模板数据
+        //生成静态化文件内容
+
+        return "";
+    }
+
     /**
      * 发布页面方法
      * @param pageId
@@ -122,10 +132,14 @@ public class PageService {
         //不存在才添加
         cmsPage.setPageId(null);
         cmsPage.setPageCreateTime(new Date());
-        cmsPageRepository.save(cmsPage);
+        CmsPage cmsPage2 = cmsPageRepository.save(cmsPage);
 
-        return new ResponseResult(CommonCode.SUCCESS);
+        ResponseResult responseResult = new ResponseResult();
+        responseResult.setCode(10000);
+        responseResult.setSuccess(true);
+        responseResult.setMessage(JSON.toJSONString(cmsPage2));
 
+        return responseResult;
     }
 
     /**
