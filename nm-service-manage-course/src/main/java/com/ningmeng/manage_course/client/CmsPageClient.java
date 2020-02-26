@@ -2,6 +2,7 @@ package com.ningmeng.manage_course.client;
 
 import com.ningmeng.framework.client.NmServiceList;
 import com.ningmeng.framework.domain.cms.CmsPage;
+import com.ningmeng.framework.domain.cms.response.CmsPostPageResult;
 import com.ningmeng.framework.model.response.ResponseResult;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,4 +21,6 @@ public interface CmsPageClient {
     @PostMapping("/cms/add")
     public ResponseResult add(@RequestBody CmsPage cmsPage);
 
+    @PostMapping("/cms/postPageQuick")
+    public CmsPostPageResult postPageQuick(@RequestBody CmsPage cmsPage);
 }

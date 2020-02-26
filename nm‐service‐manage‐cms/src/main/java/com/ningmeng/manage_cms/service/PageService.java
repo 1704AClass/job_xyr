@@ -2,8 +2,10 @@ package com.ningmeng.manage_cms.service;
 
 import com.alibaba.fastjson.JSON;
 import com.ningmeng.framework.domain.cms.CmsPage;
+import com.ningmeng.framework.domain.cms.CmsSite;
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsCode;
+import com.ningmeng.framework.domain.cms.response.CmsPostPageResult;
 import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
 import com.ningmeng.framework.model.response.QueryResponseResult;
@@ -11,6 +13,7 @@ import com.ningmeng.framework.model.response.QueryResult;
 import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_cms.config.RabbitmqConfig;
 import com.ningmeng.manage_cms.dao.CmsPageRepository;
+import com.ningmeng.manage_cms.dao.CmsSiteRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
@@ -33,10 +36,35 @@ public class PageService {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    @Autowired
+    private CmsSiteRepository cmsSiteRepository;
+
+    //获取数据模型
+    private Map getModelByPageId(String pageId){
+        //取出页面的信息
+        CmsPage cmsPage = cmsPageRepository.findById(pageId).get();
+        //取出页面的dataUrl
+        String dataUrl = cmsPage.getDataUrl();
+        //通过restTemplate请求dataUrl获取数据
+        //ResponseEntity<Map> forEntity = restTemplate.getForEntity(dataUrl, Map.class);
+        //forEntity.getBody();
+        Map body = null;
+        return body;
+    }
+
+    //获取页面的模板信息
+    private String getTemplateByPageId(String pageId){
+        //取出页面的信息
+        CmsPage cmsPage = cmsPageRepository.findById(pageId).get();
+        //根据cmsPage.getTemplateId();获得GridFS中保存模板文件
+        String TemplateValue = "asdadadadasdasdasdadadf";
+        return TemplateValue;
+    }
+
     public String preview(String cmsPageId){
         //模板Id
         CmsPage cmsPage = cmsPageRepository.findById(cmsPageId).get();
-        //根据cmsPage.getTemplateId();获得GridFS中保存模板文件
+
         //获得静态化模板数据
         //生成静态化文件内容
 
@@ -49,6 +77,7 @@ public class PageService {
      * @return
      */
     public ResponseResult postPage(String pageId){
+        //生成静态文件
         boolean flag = creatHtml();
         if(!flag){
             CustomExceptionCast.cast(CommonCode.FAIL);
@@ -83,6 +112,44 @@ public class PageService {
         return true;
     }
 
+    //一键发布页面
+    public CmsPostPageResult postPageQuick(CmsPage cmsPage){
+
+        if(cmsPage==null){
+            CustomExceptionCast.cast(CommonCode.FAIL);
+        }
+        //保存页面信息
+        ResponseResult responseResult = this.add(cmsPage);
+        if(!responseResult.isSuccess()){
+            return new CmsPostPageResult(CommonCode.FAIL,null);
+        }
+
+        CmsPage cmsPage1 = JSON.parseObject(responseResult.getMessage(), CmsPage.class);
+
+        //得到页面的url
+        //页面url=站点域名+站点webpath+页面webpath+页面名称
+        //站点id
+        String siteId = cmsPage1.getSiteId();
+        //查询站点信息
+        CmsSite cmsSite = findCmsSiteById(siteId);
+        //站点域名
+        String siteDomain = cmsSite.getSiteDomain();
+        //站点web路径
+        String siteWebPath = cmsSite.getSiteWebPath();
+        //页面web路径
+        String pageWebPath = cmsPage1.getPageWebPath();
+        //页面名称
+        String pageName = cmsPage1.getPageName();
+        //页面的web访问地址
+        String pageUrl = siteDomain+siteWebPath+pageWebPath+pageName;
+        return new CmsPostPageResult(CommonCode.SUCCESS,pageUrl);
+    }
+
+    //根据id查询站点信息
+    public CmsSite findCmsSiteById(String siteId){
+
+        return cmsSiteRepository.findById(siteId).get();
+    }
 
     /**
      * 根据Id查询对象
@@ -214,4 +281,9 @@ public class PageService {
         //返回结果
         return queryResponseResult;
     }
+
+
+
+
+
 }
