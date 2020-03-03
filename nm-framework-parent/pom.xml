@@ -16,6 +16,7 @@
         <module>../nm-service-base-filesystem</module>
         <module>../nm-govern-center</module>
         <module>../nm-service-search</module>
+        <module>../nm-service-manage-media</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
