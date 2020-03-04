@@ -14,7 +14,7 @@ public class TestChunk {
         //源文件地址
         File sourceFile = new File("D:/video/haicaowu.mp4");
         // File sourceFile = new File("d:/logo.png");
-        String chunkPath = "D:/video/chunk";
+        String chunkPath = "D:/video/chunk/";
         File chunkFolder = new File(chunkPath);
         if(!chunkFolder.exists()){
             //不存在创建目录
@@ -33,12 +33,15 @@ public class TestChunk {
         RandomAccessFile raf_read = new RandomAccessFile(sourceFile, "r");
         //分块
         for(int i=0;i<chunkNum;i++){
+            //raf_read读出来 之后 写入文件
+            //指定一个文件名
             //创建分块文件
             File file = new File(chunkPath+i);
             boolean newFile = file.createNewFile();
             if(newFile){
                 //向分块文件中写数据
                 RandomAccessFile raf_write = new RandomAccessFile(file, "rw");
+                //read 读到-1 读完了
                 int len = -1;
                 while((len = raf_read.read(b))!=-1){
                     raf_write.write(b,0,len);
