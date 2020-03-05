@@ -17,6 +17,7 @@
         <module>../nm-govern-center</module>
         <module>../nm-service-search</module>
         <module>../nm-service-manage-media</module>
+        <module>../nm-service-manage-media-processor</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
