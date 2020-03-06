@@ -5,10 +5,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.ningmeng.framework.domain.cms.CmsPage;
 import com.ningmeng.framework.domain.cms.response.CmsPostPageResult;
-import com.ningmeng.framework.domain.course.CourseBase;
-import com.ningmeng.framework.domain.course.CourseMarket;
-import com.ningmeng.framework.domain.course.CoursePic;
-import com.ningmeng.framework.domain.course.Teachplan;
+import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.ext.CourseInfo;
 import com.ningmeng.framework.domain.course.ext.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
@@ -62,13 +59,54 @@ public class CourseService {
     //课程
     @Autowired
     private CourseMapper courseMapper;
+
     @Autowired
     private CourseMarketRepository courseMarketRepository;
+
     @Autowired
     private CoursePicRepository coursePicRepository;
 
     @Autowired
+    private TeachplanMediaRepository teachplanMediaRepository;
+
+    @Autowired
     private CmsPageClient cmsPageClient;
+
+    //保存媒资信息
+    public ResponseResult savemedia(TeachplanMedia teachplanMedia) {
+        if(teachplanMedia == null){
+            //给出对应的提示信息
+            CustomExceptionCast.cast(CourseCode.COURSE_MEDIS_NAMEISNULL);
+        }
+        //通过teachplanMedia 可以获得teachplanId
+        String teachplanId = teachplanMedia.getTeachplanId();
+        //根据teachplanId 去计划表中 查询节点是否是第三级
+        Optional<Teachplan> optional = teachplanRepository.findById(teachplanId);
+        if(!optional.isPresent()){
+            CustomExceptionCast.cast(CourseCode.COURSE_MEDIS_NAMEISNULL);
+        }
+        Teachplan teachplan = optional.get();
+        //只允许为叶子结点课程计划选择视频
+        String grade = teachplan.getGrade();
+        if(StringUtils.isEmpty(grade) || !grade.equals("3")){
+            CustomExceptionCast.cast(CourseCode.COURSE_MEDIS_NAMEISNULL);
+        }
+        TeachplanMedia one = null;
+        Optional<TeachplanMedia> teachplanMediaOptional = teachplanMediaRepository.findById(teachplanId);
+        if(!teachplanMediaOptional.isPresent()){
+            one = new TeachplanMedia();
+        }else{
+            one = teachplanMediaOptional.get();
+        }
+        //保存媒资信息与课程计划信息
+        one.setTeachplanId(teachplanId);
+        one.setCourseId(teachplanMedia.getCourseId());
+        one.setMediaFileOriginalName(teachplanMedia.getMediaFileOriginalName());
+        one.setMediaId(teachplanMedia.getMediaId());
+        one.setMediaUrl(teachplanMedia.getMediaUrl());
+        teachplanMediaRepository.save(one);
+        return new ResponseResult(CommonCode.SUCCESS);
+    }
 
 
     //发布课程正式页面

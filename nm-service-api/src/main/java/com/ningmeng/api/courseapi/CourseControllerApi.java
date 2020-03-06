@@ -1,9 +1,6 @@
 package com.ningmeng.api.courseapi;
 
-import com.ningmeng.framework.domain.course.CourseBase;
-import com.ningmeng.framework.domain.course.CourseMarket;
-import com.ningmeng.framework.domain.course.CoursePic;
-import com.ningmeng.framework.domain.course.Teachplan;
+import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
 import com.ningmeng.framework.domain.course.ext.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
@@ -69,4 +66,8 @@ public interface CourseControllerApi {
 
     @ApiOperation("删除课程图片")
     public ResponseResult deleteCoursePic(String courseId);
+
+    @ApiOperation("保存媒资信息")
+    public ResponseResult savemedia(TeachplanMedia teachplanMedia);
+
 }

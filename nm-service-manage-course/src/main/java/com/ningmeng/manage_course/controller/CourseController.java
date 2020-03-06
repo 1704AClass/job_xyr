@@ -1,10 +1,7 @@
 package com.ningmeng.manage_course.controller;
 
 import com.ningmeng.api.courseapi.CourseControllerApi;
-import com.ningmeng.framework.domain.course.CourseBase;
-import com.ningmeng.framework.domain.course.CourseMarket;
-import com.ningmeng.framework.domain.course.CoursePic;
-import com.ningmeng.framework.domain.course.Teachplan;
+import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
 import com.ningmeng.framework.domain.course.ext.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
@@ -133,5 +130,11 @@ public class CourseController implements CourseControllerApi {
     @PostMapping("/publish/{id}")
     public CoursePublishResult publish(@PathVariable String id) {
         return courseService.publish(id);
+    }
+
+    @Override
+    @PostMapping("/savemedia")
+    public ResponseResult savemedia(@RequestBody TeachplanMedia teachplanMedia) {
+        return courseService.savemedia(teachplanMedia);
     }
 }

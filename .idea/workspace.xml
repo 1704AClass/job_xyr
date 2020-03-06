@@ -2,15 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5025eb6-ae5d-4954-a030-0d87da6416d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/nm-service-manage-media-processor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/src/test/java/com/ningmeng/manage_media_process/TestProcessBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/mediaapi/MediaFileControllerApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/searchapi/EsCourseControllerApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/mediaapi/MediaFileControllerApi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMediaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/config/MediaProcessTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/mq/MediaProcessTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/target/classes/META-INF/nm-service-manage-media-processor.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/target/classes/com/ningmeng/manage_media_process/config/MediaProcessTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/target/classes/com/ningmeng/manage_media_process/mq/MediaProcessTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaFileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/dao/MediaFileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/config/RabbitMQConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/controller/MediaFileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/controller/MediaUploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/dao/MediaFileDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/service/MediaFileService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/service/MediaUploadService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/com/ningmeng/manage_media/service/MediaUploadService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-framework-model/target/classes/com/ningmeng/framework/domain/media/response/MediaCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-model/target/classes/com/ningmeng/framework/domain/media/response/MediaCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-framework-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/TeachplanMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/TeachplanMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/TeachplanNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/TeachplanNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/TeachplanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/TeachplanMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media-processor/target/classes/com/ningmeng/manage_media_process/config/RabbitMQConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media-processor/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/target/classes/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media-processor/target/test-classes/com/ningmeng/manage_media_process/TestProcessBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/target/test-classes/com/ningmeng/manage_media_process/TestProcessBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/config/MediaUploadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaUploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/nm-service-api/target/" />
     <ignored path="$PROJECT_DIR$/nm-framework-model/target/" />
@@ -44,31 +71,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/config/RabbitMQConfig.java">
+        <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+            <state relative-caret-position="110">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/TeachplanMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="69" />
+            <state relative-caret-position="372">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/test/java/com/ningmeng/manage_media_process/TestProcessBuilder.java">
+        <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/searchapi/EsCourseControllerApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/TeachplanNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -78,8 +114,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -103,19 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/CourseMapper.xml" />
-        <option value="$PROJECT_DIR$/nm-service-base-filesystem/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/nm-service-base-filesystem/src/main/java/com/ningmeng/filesystem/dao/FileSystemRepository.java" />
-        <option value="$PROJECT_DIR$/nm-service-base-filesystem/src/main/java/com/ningmeng/filesystem/controller/FileSystemController.java" />
-        <option value="$PROJECT_DIR$/nm-service-base-filesystem/src/main/java/com/ningmeng/filesystem/service/FileSystemService.java" />
-        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/filesystemapi/FileSystemControllerApi.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/CoursePicRepository.java" />
-        <option value="$PROJECT_DIR$/nm-govern-center/src/main/java/com/ningmeng/goven/GovernCenterApplication.java" />
-        <option value="$PROJECT_DIR$/nm-govern-center/pom.xml" />
-        <option value="$PROJECT_DIR$/nm‐service‐manage‐cms/pom.xml" />
-        <option value="$PROJECT_DIR$/nm-govern-center/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/ManageCmsApplication.java" />
-        <option value="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/testRibbon.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/test/java/com/ningmeng/manage_course/test/Tests.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/pom.xml" />
@@ -130,10 +153,7 @@
         <option value="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/dao/CmsSiteRepository.java" />
         <option value="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/controller/CmsPageController.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/client/CmsPageClient.java" />
-        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java" />
         <option value="$PROJECT_DIR$/nm‐service‐manage‐cms‐client/src/main/java/com/ningmeng/manage_cms_client/service/CmsPageService.java" />
         <option value="$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/service/PageService.java" />
         <option value="$PROJECT_DIR$/nm-service-search/pom.xml" />
@@ -143,17 +163,33 @@
         <option value="$PROJECT_DIR$/nm-service-base-filesystem/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/nm-govern-center/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/nm-service-manage-media/src/test/java/com/ningmeng/manage_media/TestChunk.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-media/src/test/java/com/ningmeng/manage_media/TestMerge.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/config/MediaController.java" />
         <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/mediaapi/MediaUploadControllerApi.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/config/MediaUploadController.java" />
         <option value="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/media/response/MediaCode.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaUploadService.java" />
         <option value="$PROJECT_DIR$/nm-framework-parent/pom.xml" />
         <option value="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/nm-service-manage-media-processor/src/test/java/com/ningmeng/manage_media_process/TestProcessBuilder.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/mq/MediaProcessTask.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/config/MediaProcessTask.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaUploadController.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaUploadService.java" />
+        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/mediaapi/MediaFileControllerApi.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/dao/MediaFileDao.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaFileController.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaFileService.java" />
+        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" />
+        <option value="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/TeachplanMedia.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMediaRepository.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/TeachplanNode.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/TeachplanMapper.xml" />
+        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/searchapi/EsCourseControllerApi.java" />
       </list>
     </option>
   </component>
@@ -191,10 +227,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="938" />
-    <option name="y" value="277" />
+    <option name="x" value="857" />
+    <option name="y" value="335" />
     <option name="width" value="1240" />
-    <option name="height" value="1005" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -211,93 +247,6 @@
             <path>
               <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_media_process" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_media_process" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_media_process" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
-              <item name="nm-service-manage-media-processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="manage_media_process" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,7 +266,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nm-service-manage-media-processor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -340,11 +289,11 @@
       <recent name="com.ningmeng.manage_cms_client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ningmeng\hdServiceCode\nm-govern-center\src\main\resources" />
-      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-course\src\main\resources\com\ningmeng\manage_course\dao" />
-      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\service" />
-      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao" />
-      <recent name="E:\ningmeng\hdServiceCode\nm-service-api\src\main\java\com\ningmeng\api" />
+      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-media\src\main\java\com\ningmeng\manage_media\controller" />
+      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-media\src\main\java\com\ningmeng\manage_media\service" />
+      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-media\src\main\java\com\ningmeng\manage_media\config" />
+      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-media-processor\src\main\java\com\ningmeng\manage_media_process\config" />
+      <recent name="E:\ningmeng\hdServiceCode\nm-service-manage-media-processor\src\main\java\com\ningmeng\manage_media_process\mq" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,23 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestProcessBuilder.testFfmpeg1">
-    <configuration name="TestMerge.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nm-service-manage-media" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ningmeng.manage_media.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ningmeng.manage_media" />
-      <option name="MAIN_CLASS_NAME" value="com.ningmeng.manage_media.TestMerge" />
-      <option name="METHOD_NAME" value="testMerge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ManageMediaApplication">
     <configuration name="TestProcessBuilder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nm-service-manage-media-processor" />
       <extension name="coverage">
@@ -418,22 +351,6 @@
       <option name="PACKAGE_NAME" value="com.ningmeng.manage_media_process" />
       <option name="MAIN_CLASS_NAME" value="com.ningmeng.manage_media_process.TestProcessBuilder" />
       <option name="METHOD_NAME" value="testFfmpeg1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestProcessBuilder.testProcessBuilder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nm-service-manage-media-processor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ningmeng.manage_media_process.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ningmeng.manage_media_process" />
-      <option name="MAIN_CLASS_NAME" value="com.ningmeng.manage_media_process.TestProcessBuilder" />
-      <option name="METHOD_NAME" value="testProcessBuilder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -484,23 +401,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManageMediaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-manage-media" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.manage_media.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.manage_media.ManageMediaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageMediaProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-manage-media-processor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ningmeng.manage_media_process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.manage_media_process.ManageMediaProcessorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.TestMerge.testMerge" />
       <item itemvalue="Spring Boot.Govern01" />
       <item itemvalue="Spring Boot.Govern02" />
       <item itemvalue="Spring Boot.ManageCms31002" />
-      <item itemvalue="JUnit.TestProcessBuilder.testProcessBuilder" />
       <item itemvalue="JUnit.TestProcessBuilder.testFFmpeg" />
       <item itemvalue="JUnit.TestProcessBuilder" />
       <item itemvalue="JUnit.TestProcessBuilder.testFfmpeg1" />
+      <item itemvalue="Spring Boot.ManageMediaApplication" />
+      <item itemvalue="Spring Boot.ManageMediaProcessorApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ManageMediaApplication" />
+        <item itemvalue="Spring Boot.ManageMediaProcessorApplication" />
         <item itemvalue="JUnit.TestProcessBuilder.testFfmpeg1" />
         <item itemvalue="JUnit.TestProcessBuilder" />
         <item itemvalue="JUnit.TestProcessBuilder.testFFmpeg" />
-        <item itemvalue="JUnit.TestProcessBuilder.testProcessBuilder" />
-        <item itemvalue="JUnit.TestMerge.testMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -534,7 +477,7 @@
       <workItem from="1582680728938" duration="6845000" />
       <workItem from="1582770359610" duration="13247000" />
       <workItem from="1583065106992" duration="14008000" />
-      <workItem from="1583374727033" duration="3072000" />
+      <workItem from="1583374727033" duration="14061000" />
     </task>
     <task id="LOCAL-00001" summary="2.14">
       <created>1581727688460</created>
@@ -711,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583292805793</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="3.4">
+      <created>1583377957227</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1583377957227</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -747,7 +697,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174905000" />
+    <option name="totallyTimeSpent" value="185894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,10 +709,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="751" y="222" width="992" height="804" extended-state="0" />
-    <editor active="true" />
+    <frame x="686" y="268" width="992" height="783" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5995717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31049252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -771,8 +720,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49881235" visible="true" weight="0.31944445" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49881235" weight="0.4784689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29308006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -784,7 +733,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50375134" side_tool="true" weight="0.21571648" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32561728" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32535884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24892704" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -907,182 +856,14 @@
     <MESSAGE value="2.27" />
     <MESSAGE value="3.2" />
     <MESSAGE value="3.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.3" />
+    <MESSAGE value="3.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.4" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nm-framework-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-994" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/CourseMarketRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/CourseView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/response/CoursePublishResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/cms/response/CmsPostPageResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/cmsapi/CmsPageControllerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/dao/CmsSiteRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/controller/CmsPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2742#2743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/client/CmsPageClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4526#4527#0" expanded="true" />
-            <element signature="e#4654#4655#0" expanded="true" />
-            <element signature="e#4702#4703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="98" column="55" lean-forward="true" selection-start-line="98" selection-start-column="55" selection-end-line="98" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5254#5255#0" expanded="true" />
-            <element signature="e#5314#5315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms‐client/src/main/java/com/ningmeng/manage_cms_client/service/CmsPageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/java/com/ningmeng/manage_cms/service/PageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms‐client/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-govern-center/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-base-filesystem/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1128,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/test/java/com/ningmeng/manage_media/TestChunk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1167,13 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1247,33 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/config/MediaUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaUploadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4840">
-          <caret line="241" column="42" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/ManageMediaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-framework-parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1281,38 +1021,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/dao/MediaFileRepository.java">
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/test/java/com/ningmeng/manage_media_process/TestProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="208">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="87">
           <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/config/RabbitMQConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
+        <state relative-caret-position="880">
           <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/config/RabbitMQConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaUploadService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/config/MediaProcessTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1298">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/dao/MediaFileRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/mq/MediaProcessTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="69" />
+        <state relative-caret-position="176">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/test/java/com/ningmeng/manage_media_process/TestProcessBuilder.java">
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="198">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/java/com/ningmeng/manage_media_process/ManageMediaProcessorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/mediaapi/MediaFileControllerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/dao/MediaFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="e#2022#2033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/ManageMediaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/TeachplanMedia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMediaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4526#4527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="106" column="43" lean-forward="true" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/TeachplanNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/TeachplanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/searchapi/EsCourseControllerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,4 +1,4 @@
-package com.ningmeng.manage_media_process.config;
+package com.ningmeng.manage_media.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Qualifier;
