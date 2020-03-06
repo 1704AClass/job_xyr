@@ -18,12 +18,14 @@ import com.ningmeng.framework.model.response.QueryResult;
 import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_course.client.CmsPageClient;
 import com.ningmeng.manage_course.dao.*;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -70,7 +72,28 @@ public class CourseService {
     private TeachplanMediaRepository teachplanMediaRepository;
 
     @Autowired
+    private TeachplanMediaPubRepository teachplanMediaPubRepository;
+
+    @Autowired
     private CmsPageClient cmsPageClient;
+
+    //保存课程计划媒资信息
+    private void saveTeachplanMediaPub(String courseId){
+        //查询课程媒资信息
+        List<TeachplanMedia> teachplanMediaList = teachplanMediaRepository.findByCourseId(courseId);
+        //先删除
+        teachplanMediaPubRepository.deleteByCourseId(courseId);
+        //先查询
+        List<TeachplanMedia> list = teachplanMediaRepository.findByCourseId(courseId)
+        List<TeachplanMediaPub> lists = new ArrayList<>();
+
+        for(TeachplanMedia teachplanMedia:list){
+            TeachplanMediaPub teachplanMediaPub =new TeachplanMediaPub();
+            BeanUtils.copyProperties(teachplanMedia,teachplanMediaPub);
+            lists.add(teachplanMediaPub);
+        }
+        teachplanMediaPubRepository.saveAll(lists);
+    }
 
     //保存媒资信息
     public ResponseResult savemedia(TeachplanMedia teachplanMedia) {
@@ -146,6 +169,13 @@ public class CourseService {
 
         //更新课程状态
         this.saveCoursePubState(courseId);
+
+        //更新索引库
+        CoursePub coursePub = createCoursePub(courseId);
+        this.saveCoursePub(courseId,coursePub);
+
+        //更新课程媒资计划信息
+        this.saveTeachplanMediaPub(courseId);
 
         //返回
         return new CoursePublishResult(CommonCode.SUCCESS,cmsPostPageResult.getPageUrl());
