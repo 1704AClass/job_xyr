@@ -171,11 +171,13 @@ public class CourseService {
         this.saveCoursePubState(courseId);
 
         //更新索引库
-        CoursePub coursePub = createCoursePub(courseId);
-        this.saveCoursePub(courseId,coursePub);
+        //CoursePub coursePub = createCoursePub(courseId);
+        //this.saveCoursePub(courseId,coursePub);
 
         //更新课程媒资计划信息
         this.saveTeachplanMediaPub(courseId);
+
+        //cmsPostPageResult.getPageUrl()
 
         //返回
         return new CoursePublishResult(CommonCode.SUCCESS,cmsPostPageResult.getPageUrl());

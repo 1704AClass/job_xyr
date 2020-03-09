@@ -12,6 +12,11 @@
 
     <artifactId>nm-service-search</artifactId>
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.ningmeng</groupId>
             <artifactId>nm-framework-model</artifactId>

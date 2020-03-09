@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="nm-govern-center" />
+        <module name="nm-service-learning" />
         <module name="nm-service-search" />
         <module name="test-rabbitmq-consumer" />
         <module name="nm‐service‐manage‐cms" />
@@ -30,6 +31,7 @@
       <module name="nm-govern-center" target="1.8" />
       <module name="nm-service-api" target="1.8" />
       <module name="nm-service-base-filesystem" target="1.8" />
+      <module name="nm-service-learning" target="1.8" />
       <module name="nm-service-manage-cms" target="1.8" />
       <module name="nm-service-manage-cms-client" target="1.8" />
       <module name="nm-service-manage-course" target="1.8" />
@@ -50,6 +52,7 @@
       <module name="nm-govern-center" options="-parameters" />
       <module name="nm-service-api" options="-parameters" />
       <module name="nm-service-base-filesystem" options="-parameters" />
+      <module name="nm-service-learning" options="-parameters" />
       <module name="nm-service-manage-cms" options="-parameters" />
       <module name="nm-service-manage-cms-client" options="-parameters" />
       <module name="nm-service-manage-course" options="-parameters" />
