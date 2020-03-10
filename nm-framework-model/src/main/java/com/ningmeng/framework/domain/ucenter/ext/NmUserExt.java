@@ -1,7 +1,7 @@
 package com.ningmeng.framework.domain.ucenter.ext;
 
-import com.ningmeng.framework.domain.ucenter.XcMenu;
-import com.ningmeng.framework.domain.ucenter.XcUser;
+import com.ningmeng.framework.domain.ucenter.NmMenu;
+import com.ningmeng.framework.domain.ucenter.NmUser;
 import lombok.Data;
 import lombok.ToString;
 
@@ -10,10 +10,10 @@ import java.util.List;
 
 @Data
 @ToString
-public class XcUserExt extends XcUser {
+public class NmUserExt extends NmUser {
 
     //权限信息
-    private List<XcMenu> permissions;
+    private List<NmMenu> permissions;
 
     //企业信息
     private String companyId;

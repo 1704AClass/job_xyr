@@ -11,20 +11,24 @@ import java.util.Date;
 @Data
 @ToString
 @Entity
-@Table(name="xc_permission")
+@Table(name="nm_role")
 @GenericGenerator(name = "jpa-uuid", strategy = "uuid")
-public class XcPermission {
+public class NmRole {
 
     @Id
     @GeneratedValue(generator = "jpa-uuid")
     @Column(length = 32)
     private String id;
-    @Column(name="roleId")
-    private String role_id;
-    @Column(name="menuId")
-    private String menu_id;
+    @Column(name="role_name")
+    private String roleName;
+    @Column(name="roleCode")
+    private String role_code;
+    private String description;
+    private String status;
     @Column(name="createTime")
     private Date create_time;
+    @Column(name="update_time")
+    private Date updateTime;
 
 
 }

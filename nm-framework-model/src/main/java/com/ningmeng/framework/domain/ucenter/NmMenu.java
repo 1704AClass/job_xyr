@@ -11,9 +11,9 @@ import java.util.Date;
 @Data
 @ToString
 @Entity
-@Table(name="xc_menu")
+@Table(name="nm_menu")
 @GenericGenerator(name = "jpa-uuid", strategy = "uuid")
-public class XcMenu {
+public class NmMenu {
 
     @Id
     @GeneratedValue(generator = "jpa-uuid")

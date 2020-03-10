@@ -5,35 +5,30 @@ import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.io.Serializable;
 
 
 @Data
 @ToString
 @Entity
-@Table(name="xc_user")
+@Table(name="nm_company")
 @GenericGenerator(name = "jpa-uuid", strategy = "uuid")
-public class XcUser {
-
+public class NmCompany implements Serializable {
+    private static final long serialVersionUID = -916357110051689786L;
     @Id
     @GeneratedValue(generator = "jpa-uuid")
     @Column(length = 32)
     private String id;
-    private String username;
-    private String password;
-    private String salt;
     private String name;
-    private String utype;
-    private String birthday;
-    private String userpic;
-    private String sex;
+    private String logo;
+    private String intro;
     private String email;
-    private String phone;
+    private String mobile;
+    private String linkname;
+    private String identitypic;
+    private String worktype;
+    private String businesspic;
     private String status;
-    @Column(name="create_time")
-    private Date createTime;
-    @Column(name="update_time")
-    private Date updateTime;
 
 
 }
