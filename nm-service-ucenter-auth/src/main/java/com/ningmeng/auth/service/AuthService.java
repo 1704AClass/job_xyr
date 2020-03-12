@@ -2,7 +2,6 @@ package com.ningmeng.auth.service;
 
 import com.alibaba.fastjson.JSON;
 import com.ningmeng.framework.domain.ucenter.ext.AuthToken;
-import com.ningmeng.framework.domain.ucenter.response.AuthCode;
 import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
 import org.slf4j.Logger;
@@ -45,6 +44,28 @@ public class AuthService {
     @Autowired
     StringRedisTemplate stringRedisTemplate;
 
+    //从redis中删除令牌
+    public boolean delToken(String access_token){
+        String name = "user_token:" + access_token;
+        stringRedisTemplate.delete(name);
+        return true;
+    }
+
+
+    //从redis查询令牌
+    public AuthToken getUserToken(String token){
+        //定义userToken
+        String userToken = "user_token:"+token;
+        //通过redis取jwt信息
+        String jwtToken = stringRedisTemplate.boundValueOps(userToken).get();
+        //将json串转换成AuthToken
+        if(userToken!=null && jwtToken!=null){
+            AuthToken authToken = JSON.parseObject(jwtToken, AuthToken.class);
+            return authToken;
+        }
+        return null;
+    }
+
     //认证方法
     public AuthToken login(String username,String password,String clientId,String clientSecret){
 
@@ -74,9 +95,8 @@ public class AuthService {
     //认证方法
     private AuthToken applyToken(String username,String password,String clientId,String
             clientSecret){
-        //选中认证服务的地址w
-        ServiceInstance serviceInstance =
-                loadBalancerClient.choose(XcServiceList.XC_SERVICE_UCENTER_AUTH);
+        //选中认证服务的地址
+        ServiceInstance serviceInstance = loadBalancerClient.choose(clientId);
         if (serviceInstance == null) {
             LOGGER.error("choose an auth instance fail");
             CustomExceptionCast.cast(CommonCode.FAIL);

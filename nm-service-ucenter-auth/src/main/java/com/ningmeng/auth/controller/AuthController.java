@@ -5,6 +5,7 @@ import com.ningmeng.auth.service.AuthService;
 import com.ningmeng.framework.domain.ucenter.ext.AuthToken;
 import com.ningmeng.framework.domain.ucenter.request.LoginRequest;
 import com.ningmeng.framework.domain.ucenter.response.AuthCode;
+import com.ningmeng.framework.domain.ucenter.response.JwtResult;
 import com.ningmeng.framework.domain.ucenter.response.LoginResult;
 import com.ningmeng.framework.exception.CustomExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
@@ -13,12 +14,14 @@ import com.ningmeng.framework.utils.CookieUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
 
 @RestController
 public class AuthController implements AuthControllerApi {
@@ -41,6 +44,25 @@ public class AuthController implements AuthControllerApi {
     @Autowired
     AuthService authService;
 
+    @Override
+    @GetMapping("/userjwt")
+    public JwtResult userjwt() {
+        //获取cookie中的令牌2.2.6 测试
+
+        String access_token = this.getTokenFormCookie();
+        //根据令牌从redis查询jwt
+        AuthToken authToken = authService.getUserToken(access_token);
+        if(authToken == null){
+            return new JwtResult(CommonCode.FAIL,null);
+        }
+        return new JwtResult(CommonCode.SUCCESS,authToken.getJwt_token());
+    }
+    //从cookie中读取访问令牌
+    private String getTokenFormCookie(){
+        Map<String, String> cookieMap = CookieUtil.readCookie(request,"uid");
+        String access_token = cookieMap.get("uid");
+        return access_token;
+    }
 
     @Override
     @PostMapping("/userlogin")
@@ -71,9 +93,24 @@ public class AuthController implements AuthControllerApi {
     }
 
 
+    //退出
     @Override
     @PostMapping("/userlogout")
     public ResponseResult logout() {
-        return null;
+        //取出身份令牌
+        String uid = getTokenFormCookie();
+        //删除redis中token
+        authService.delToken(uid);
+        //清除cookie
+        clearCookie(uid);
+        return new ResponseResult(CommonCode.SUCCESS);
     }
+
+    //清除cookie
+    private void clearCookie(String token){
+        HttpServletResponse response = ((ServletRequestAttributes)
+                RequestContextHolder.getRequestAttributes()).getResponse();
+        CookieUtil.addCookie(response, cookieDomain, "/", "uid", token, 0, false);
+    }
+
 }
