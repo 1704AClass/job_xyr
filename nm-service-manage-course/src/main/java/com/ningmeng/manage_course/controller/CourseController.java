@@ -12,6 +12,7 @@ import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_course.service.CategoryService;
 import com.ningmeng.manage_course.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -114,6 +115,8 @@ public class CourseController implements CourseControllerApi {
     }
 
     @Override
+    //指定查询课程视图方法需要拥有course_find_view权限
+    @PreAuthorize("hasAnyAuthority('course_find_view')")
     @GetMapping("/courseview/{id}")
     public CourseView courseview(@PathVariable("id") String id) {
         return courseService.getCoruseView(id);

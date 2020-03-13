@@ -1,6 +1,7 @@
 package com.ningmeng.auth.service;
 
 import com.ningmeng.auth.client.UserClient;
+import com.ningmeng.framework.domain.ucenter.NmMenu;
 import com.ningmeng.framework.domain.ucenter.ext.NmUserExt;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -49,6 +53,20 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
         //从数据库查询用户正确的密码，Spring Security会去比对输入密码的正确性
         String password = userext.getPassword();
+
+        //指定用户的权限，这里暂时硬编码
+        List<String> permissionList = new ArrayList<>();
+        //permissionList.add("course_find_view");
+        //permissionList.add("course_find_pic");
+
+        //取出用户权限
+        List<NmMenu> permissions = userext.getPermissions();
+        for(NmMenu nmMenu:permissions){
+            permissionList.add(nmMenu.getCode());
+        }
+
+
+
         String user_permission_string = "";
         UserJwt userDetails = new UserJwt(username,
                 password,

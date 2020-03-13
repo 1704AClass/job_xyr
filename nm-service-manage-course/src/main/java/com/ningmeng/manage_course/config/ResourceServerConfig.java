@@ -19,7 +19,8 @@ import java.util.stream.Collectors;
 
 @Configuration
 @EnableResourceServer
-@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)//激活方法上的PreAuthorize注解
+//激活方法上的PreAuthorize注解
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     //公钥
@@ -65,7 +66,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 //下边的路径放行
                 .antMatchers("/v2/api‐docs", "/swagger‐resources/configuration/ui",
                         "/swagger‐resources","/swagger‐resources/configuration/security",
-                        "/swagger‐ui.html","/webjars/**","/**")
+                        "/swagger‐ui.html","/webjars/**")
                 .permitAll()
                 .anyRequest().authenticated();
     }
