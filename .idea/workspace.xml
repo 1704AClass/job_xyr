@@ -2,25 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5025eb6-ae5d-4954-a030-0d87da6416d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nm-govern-gateway/src/main/java/com/ningmeng/govern/gateway/filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-govern-gateway/src/main/java/com/ningmeng/govern/gateway/filter/LoginFilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-govern-gateway/src/main/java/com/ningmeng/govern/gateway/service/AuthServic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmCompanyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmMenuRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmPermissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmUserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/resources/com/ningmeng/ucenter/dao/NmMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_wxpay_wxpay_sdk_0_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/interceptor/FeignClientInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-order/nm-service-manage-order.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/config/AsyncTaskConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/task/ChooseCourseTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/exception/ExceptionCatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/exception/ExceptionCatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-common/nm-framework-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-common/nm-framework-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-common/target/classes/com/ningmeng/framework/exception/ExceptionCatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-common/target/classes/com/ningmeng/framework/exception/ExceptionCatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-model/nm-framework-model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-model/nm-framework-model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-framework-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-framework-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-govern-gateway/nm-govern-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-govern-gateway/nm-govern-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-api/nm-service-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-api/nm-service-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/auth/AuthControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/auth/AuthControllerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/courseapi/CourseControllerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-api/target/classes/com/ningmeng/api/courseapi/CourseControllerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-base-filesystem/nm-service-base-filesystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-base-filesystem/nm-service-base-filesystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media-processor/nm-service-manage-media-processor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media-processor/nm-service-manage-media-processor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-manage-media/nm-service-manage-media.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-manage-media/nm-service-manage-media.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm-service-search/nm-service-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-search/nm-service-search.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmCompanyUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmCompanyUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms/nm‐service‐manage‐cms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms/nm‐service‐manage‐cms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm‐service‐manage‐cms‐client/nm‐service‐manage‐cms‐client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/nm‐service‐manage‐cms‐client/nm‐service‐manage‐cms‐client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-rabbitmq-consumer/test-rabbitmq-consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test-rabbitmq-consumer/test-rabbitmq-consumer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-rabbitmq-producer/test-rabbitmq-producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test-rabbitmq-producer/test-rabbitmq-producer.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/nm-service-api/target/" />
     <ignored path="$PROJECT_DIR$/nm-framework-model/target/" />
@@ -43,6 +55,7 @@
     <ignored path="$PROJECT_DIR$/nm-service-ucenter-auth/target/" />
     <ignored path="$PROJECT_DIR$/nm-service-ucenter/target/" />
     <ignored path="$PROJECT_DIR$/nm-govern-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/nm-service-manage-order/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +69,71 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nm-framework-parent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/ManageOrderApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/task/ChooseCourseTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/config/AsyncTaskConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="814">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,14 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/controller/MediaFileController.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-media/src/main/java/com/ningmeng/manage_media/service/MediaFileService.java" />
-        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" />
-        <option value="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/TeachplanMedia.java" />
-        <option value="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/ext/TeachplanNode.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/TeachplanMapper.xml" />
-        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/searchapi/EsCourseControllerApi.java" />
-        <option value="$PROJECT_DIR$/nm-framework-model/src/main/java/com/ningmeng/framework/domain/course/TeachplanMediaPub.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMediaPubRepository.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/TeachplanMediaRepository.java" />
         <option value="$PROJECT_DIR$/nm-service-learning/src/main/resources/logback-spring.xml" />
@@ -109,7 +172,6 @@
         <option value="$PROJECT_DIR$/nm-service-learning/src/main/java/com/ningmeng/learning/controller/CourseLearningController.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserJwt.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/pom.xml" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/test/java/com/ningmeng/auth/TestRedis.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/resources/application.yml" />
@@ -124,7 +186,6 @@
         <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/auth/AuthControllerApi.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/AuthService.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/nm-framework-parent/pom.xml" />
         <option value="$PROJECT_DIR$/nm-govern-gateway/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/nm-govern-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/controller/AuthController.java" />
@@ -132,12 +193,22 @@
         <option value="$PROJECT_DIR$/nm-govern-gateway/src/main/java/com/ningmeng/govern/gateway/service/AuthServic.java" />
         <option value="$PROJECT_DIR$/nm-govern-gateway/src/main/java/com/ningmeng/govern/gateway/filter/LoginFilter.java" />
         <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/config/ResourceServerConfig.java" />
-        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" />
         <option value="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/exception/ExceptionCatch.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter/src/main/resources/com/ningmeng/ucenter/dao/NmMenuMapper.xml" />
         <option value="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/dao/NmMenuMapper.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter/src/main/java/com/ningmeng/ucenter/service/UserService.java" />
+        <option value="$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java" />
         <option value="$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/nm-framework-common/pom.xml" />
+        <option value="$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/interceptor/FeignClientInterceptor.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java" />
+        <option value="$PROJECT_DIR$/nm-framework-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/nm-service-manage-order/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/config/AsyncTaskConfig.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/ManageOrderApplication.java" />
+        <option value="$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/task/ChooseCourseTask.java" />
       </list>
     </option>
   </component>
@@ -174,9 +245,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="771" />
-    <option name="y" value="257" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="627" />
+    <option name="y" value="222" />
     <option name="width" value="1240" />
     <option name="height" value="980" />
   </component>
@@ -188,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,10 +266,64 @@
               <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdServiceCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdServiceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="nm-service-manage-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -214,7 +338,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nm-service-ucenter/src/main/resources/com/ningmeng/ucenter/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nm-service-manage-order" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -257,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestClient.testPasswrodEncoder">
+  <component name="RunManager" selected="Spring Boot.ManageOrderApplication">
     <configuration name="TestClient.testClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nm-service-ucenter-auth" />
       <extension name="coverage">
@@ -364,15 +488,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="nm-service-search" />
+    <configuration name="ManageOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nm-service-manage-order" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ningmeng.search.*" />
+          <option name="PATTERN" value="com.ningmeng.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.search.SearchApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ningmeng.order.ManageOrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -392,24 +516,24 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TestRedis.testRedis" />
+      <item itemvalue="JUnit.TestClient.testClient" />
+      <item itemvalue="JUnit.TestClient.testPasswrodEncoder" />
       <item itemvalue="Spring Boot.Govern01" />
       <item itemvalue="Spring Boot.Govern02" />
       <item itemvalue="Spring Boot.ManageCms31002" />
-      <item itemvalue="Spring Boot.LearningApplication" />
-      <item itemvalue="Spring Boot.SearchApplication" />
       <item itemvalue="Spring Boot.UcenterAuthApplication" />
-      <item itemvalue="JUnit.TestRedis.testRedis" />
-      <item itemvalue="JUnit.TestClient.testClient" />
       <item itemvalue="Spring Boot.UcenterApplication" />
-      <item itemvalue="JUnit.TestClient.testPasswrodEncoder" />
+      <item itemvalue="Spring Boot.LearningApplication" />
+      <item itemvalue="Spring Boot.ManageOrderApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ManageOrderApplication" />
         <item itemvalue="JUnit.TestClient.testPasswrodEncoder" />
         <item itemvalue="JUnit.TestClient.testClient" />
         <item itemvalue="JUnit.TestRedis.testRedis" />
         <item itemvalue="Spring Boot.LearningApplication" />
-        <item itemvalue="Spring Boot.SearchApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -444,7 +568,8 @@
       <workItem from="1582770359610" duration="13247000" />
       <workItem from="1583065106992" duration="14008000" />
       <workItem from="1583374727033" duration="16542000" />
-      <workItem from="1583632150929" duration="25805000" />
+      <workItem from="1583632150929" duration="26430000" />
+      <workItem from="1584267536189" duration="6140000" />
     </task>
     <task id="LOCAL-00001" summary="2.14">
       <created>1581727688460</created>
@@ -670,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583983662908</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="3.12">
+      <created>1584069203214</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1584069203214</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -706,7 +838,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214180000" />
+    <option name="totallyTimeSpent" value="220945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -719,8 +851,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1742" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17517814" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26445395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -730,7 +863,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49881235" weight="0.28503186" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49881235" visible="true" weight="0.385567" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29308006" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -742,7 +875,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50375134" side_tool="true" weight="0.21496816" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.21030928" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.21019109" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24892704" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -754,41 +887,6 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3169165" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49881235" weight="0.28503186" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29308006" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298969" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49624866" weight="0.71340203" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50375134" side_tool="true" weight="0.21496816" />
-      <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.21030928" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24892704" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.18415418" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -846,7 +944,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2.14" />
     <MESSAGE value="2.15" />
     <MESSAGE value="2.15提交" />
     <MESSAGE value="2.18" />
@@ -871,93 +968,14 @@
     <MESSAGE value="3.9" />
     <MESSAGE value="3.10" />
     <MESSAGE value="3.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.11" />
+    <MESSAGE value="3.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.12" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nm-framework-utils/src/main/java/com/ningmeng/framework/utils/XcOauth2Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm‐service‐manage‐cms/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-search/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-media-processor/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-learning/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/src/main/resources/nm.keystore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserJwt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/publickey.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/cmsapi/CmsPageControllerApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1103,13 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-framework-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-govern-gateway/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1169,13 +1180,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="118" column="52" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1257,22 +1261,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/controller/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-856">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-api/src/main/java/com/ningmeng/api/courseapi/CourseControllerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="46" column="86" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/CourseMarketRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/dao/CourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/resources/com/ningmeng/manage_course/dao/CourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="289" column="9" selection-start-line="289" selection-start-column="9" selection-end-line="289" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-ucenter-auth/src/main/java/com/ningmeng/auth/service/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-framework-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-framework-common/src/main/java/com/ningmeng/framework/interceptor/FeignClientInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-course/src/main/java/com/ningmeng/manage_course/ManageCourseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding>
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-framework-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/ManageOrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/config/AsyncTaskConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nm-service-manage-order/src/main/java/com/ningmeng/order/task/ChooseCourseTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1327,7 +1444,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>nm-govern-gateway</last-edited>
+          <last-edited>nm-service-manage-order</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

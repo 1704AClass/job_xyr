@@ -5,6 +5,7 @@ import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
 import com.ningmeng.framework.domain.course.ext.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
+import com.ningmeng.framework.domain.course.request.CourseListRequest;
 import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.domain.system.SysDictionary;
 import com.ningmeng.framework.model.response.QueryResponseResult;
@@ -42,8 +43,8 @@ public class CourseController implements CourseControllerApi {
     //分页查询课程
     @Override
     @GetMapping("/findCourseList/{page}/{size}")
-    public QueryResponseResult findCourseList(@PathVariable("page") int page, @PathVariable("size") int size, String id) {
-        return courseService.findCourseList(page,size,id);
+    public QueryResponseResult findCourseList(@PathVariable("page") int page, @PathVariable("size") int size, CourseListRequest courseListRequest) {
+        return courseService.findCourseList(page,size,courseListRequest.getCompanyId());
     }
 
     //新增课程

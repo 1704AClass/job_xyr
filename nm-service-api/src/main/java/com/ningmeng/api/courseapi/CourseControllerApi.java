@@ -4,6 +4,7 @@ import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
 import com.ningmeng.framework.domain.course.ext.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
+import com.ningmeng.framework.domain.course.request.CourseListRequest;
 import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.domain.system.SysDictionary;
 import com.ningmeng.framework.model.response.QueryResponseResult;
@@ -35,7 +36,7 @@ public interface CourseControllerApi {
     public ResponseResult addTeachplan(Teachplan teachplan);
 
     @ApiOperation("分页查询课程列表")
-    public QueryResponseResult findCourseList(int page,int size,String id);
+    public QueryResponseResult findCourseList(int page, int size, CourseListRequest courseListRequest);
 
     @ApiOperation("新增课程")
     public ResponseResult addCourseBase(CourseBase courseBase);

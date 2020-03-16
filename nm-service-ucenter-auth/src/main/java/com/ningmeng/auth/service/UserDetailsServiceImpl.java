@@ -65,12 +65,19 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             permissionList.add(nmMenu.getCode());
         }
 
+        /**
+         * 授权的细粒度和粗粒度
+         * 粗粒度 一般安全框架（spring、shiro）可以帮助实现（按键不能看见，菜单选项不能看见，标签页不能看见）
+         * 细粒度 安全框架实现不了（数据级别，拥有相同权限的用户看到不一样的数据，需要手动书写代码实现）
+         */
 
 
         String user_permission_string = "";
         UserJwt userDetails = new UserJwt(username,
                 password,
                 AuthorityUtils.commaSeparatedStringToAuthorityList(user_permission_string));
+
+        //这个地方就是将来封装到jwt的负载信息
         //用户id
         userDetails.setId(userext.getId());
         //用户名称
