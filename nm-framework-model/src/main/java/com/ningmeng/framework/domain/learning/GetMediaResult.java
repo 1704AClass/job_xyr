@@ -1,4 +1,4 @@
-package com.ningmeng.framework.domain.learning.response;
+package com.ningmeng.framework.domain.learning;
 
 import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.framework.model.response.ResultCode;
@@ -10,11 +10,14 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 public class GetMediaResult extends ResponseResult {
-    public GetMediaResult(ResultCode resultCode, String fileUrl) {
+
+    //媒资文件播放地址
+    private String fileUrl;
+
+    public GetMediaResult(ResultCode resultCode,String fileUrl){
         super(resultCode);
         this.fileUrl = fileUrl;
     }
 
-    //媒资文件播放地址
-    private String fileUrl;
+
 }

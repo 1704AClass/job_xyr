@@ -1,4 +1,4 @@
-package com.ningmeng.order.config;
+package com.ningmeng.learning.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Qualifier;

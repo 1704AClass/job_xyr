@@ -2,7 +2,6 @@ package com.ningmeng.learning.controller;
 
 import com.ningmeng.api.learningapi.CourseLearningControllerApi;
 import com.ningmeng.framework.domain.learning.response.GetMediaResult;
-import com.ningmeng.learning.service.LearningService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

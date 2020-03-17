@@ -19,27 +19,29 @@ public class AsyncTaskConfig implements SchedulingConfigurer, AsyncConfigurer {
     private int corePoolSize = 5;
 
     @Bean
-    public ThreadPoolTaskScheduler taskScheduler()
-    {
+    public ThreadPoolTaskScheduler taskScheduler(){
         ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
         scheduler.initialize();//初始化线程池
-        scheduler.setPoolSize(corePoolSize);//线程池容量
+        scheduler.setPoolSize(corePoolSize);//线程池数量
         return scheduler;
     }
 
     @Override
-    public Executor getAsyncExecutor() {
+    public Executor getAsyncExecutor(){
         Executor executor = taskScheduler();
         return executor;
     }
 
     @Override
-    public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
+    public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler(){
         return null;
     }
+
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {
         scheduledTaskRegistrar.setTaskScheduler(taskScheduler());
     }
+
+
 }

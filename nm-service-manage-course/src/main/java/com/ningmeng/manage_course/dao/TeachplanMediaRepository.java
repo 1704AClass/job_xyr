@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface TeachplanMediaRepository extends JpaRepository<TeachplanMedia,String> {
 
-     //从TeachplanMedia查询课程计划媒资信息
+    //从TeachplanMedia查询课程计划媒资信息
     List<TeachplanMedia> findByCourseId(String courseId);
+
 }

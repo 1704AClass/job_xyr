@@ -2,9 +2,11 @@ package com.ningmeng.manage_course.dao;
 
 import com.ningmeng.framework.domain.course.CoursePic;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface CoursePicRepository extends JpaRepository<CoursePic, String> {
+@Repository
+public interface CoursePicRepositroy extends JpaRepository<CoursePic,String> {
 
     //删除成功返回1否则返回0
-    public long deleteByCourseid(String courseid);
+    long deleteByCourseid(String courseId);
 }
